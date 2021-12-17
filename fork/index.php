@@ -16,7 +16,7 @@ function logData() {
     global $url;
     global $username;
     global $branch;
-    date_default_timezone_set('America/Chicago');
+    date_default_timezone_set('Asia/Seoul');
 
     $data = array("IP" => $_SERVER['REMOTE_ADDR'], "url" => $url, "username" => $username, "branch" => $branch, "is_neos" => IS_NEOS, "is_agnos" => IS_AGNOS, "is_wget" => IS_WGET, "user_agent" => USER_AGENT, "date" => date("Y-m-d_H:i:s",time()));
     $data = json_encode($data);
