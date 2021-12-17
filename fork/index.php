@@ -9,7 +9,7 @@ define("IS_WGET", str_contains(USER_AGENT, "Wget"));
 # Use release2 if NEOS, else release3 (careful! wget assumes comma three)
 define("DEFAULT_STOCK_BRANCH", IS_NEOS ? "release2" : "release3");
 
-define("WEBSITE_URL", "https://smiskol.com");
+define("WEBSITE_URL", "https://opkr.tk");
 define("BASE_DIR", "/" . basename(__DIR__));
 
 function logData() {
@@ -54,7 +54,8 @@ class Alias {
 # Handle aliases
 $aliases = [new Alias("dragonpilot-community", "devel-i18n", ["dragonpilot", "dp"], "", "dragonpilot"),
             new Alias("commaai", DEFAULT_STOCK_BRANCH, ["stock", "commaai"], "", "openpilot"),
-            new Alias("sshane", "SA-master", ["shane", "smiskol", "sa", "sshane"], "", "Stock Additions")];
+            new Alias("sshane", "SA-master", ["shane", "smiskol", "sa", "sshane"], "", "Stock Additions"),
+	    new Alias("openpilotkr", "OPKR", ["opkr", "openpilotkr", "op"], "", "openpilotkr")];
 foreach ($aliases as $al) {
     if (in_array($username, $al->aliases)) {
         $username = $al->name;
