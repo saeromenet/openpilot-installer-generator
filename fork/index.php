@@ -55,7 +55,7 @@ class Alias {
 $aliases = [new Alias("dragonpilot-community", "devel-i18n", ["dragonpilot", "dp"], "", "dragonpilot"),
             new Alias("commaai", DEFAULT_STOCK_BRANCH, ["stock", "commaai"], "", "openpilot"),
             new Alias("sshane", "SA-master", ["shane", "smiskol", "sa", "sshane"], "", "Stock Additions"),
-	    new Alias("optoolfactory", "OPKR", ["opkr", "optoolfactory", "optool"], "", "optoolfactory")];
+	    new Alias("saeromenet", "master0814_eon_final", ["crwusiz", "saeromenet", "saeromenet"], "", "saeromenet")];
 foreach ($aliases as $al) {
     if (in_array($username, $al->aliases)) {
         $username = $al->name;
